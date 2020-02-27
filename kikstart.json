@@ -1,0 +1,23 @@
+{
+  "name": "template-angular-cli",
+  "dev": {
+    "cmd": "yarn",
+    "params": "start"
+  },
+  "build": {
+    "cmd": "yarn",
+    "params": "ng build"
+  },
+  "deploy": {},
+  "containers": [
+    {
+      "name": "dev",
+      "image": "kikstart/kikstart:latest",
+      "port": 80,
+      "cmd": [
+        "init",
+        "-s"
+      ]
+    }
+  ]
+}
